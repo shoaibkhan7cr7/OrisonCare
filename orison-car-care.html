@@ -1,0 +1,1299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8 />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ORISON CAR CARE | Premium Car Painting, Detailing &amp; Care — Karnataka</title>
+<meta name="description" content="ORISON CAR CARE — professional car painting, denting, underbody coating, headlight buffing, washing, interior cleaning and detailing. Book your service on WhatsApp today." />
+<meta property="og:title" content="ORISON CAR CARE — Professional Car Care. Exceptional Results." />
+<meta property="og:description" content="Complete automotive care, restoration and detailing. 500+ cars serviced, 20+ years experience. Book a service today." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#050505" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&family=Inter+Tight:wght@700;800;900&display=swap" rel="stylesheet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"ORISON CAR CARE","description":"Professional car care, painting, denting and detailing workshop.","telephone":"+919738773785","email":"Orisoncarcare@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Karnataka","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":14.470380,"longitude":75.898223},"sameAs":["https://www.instagram.com/orisoncarcare","https://youtube.com/@orisoncarcare0313"]}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink:'#050505', panel:'#101418', card:'#101418',
+        accent:'#00D6FF', cyanBright:'#00BFF3',
+        soft:'#EAFBFF', muted:'#C7D0D5', faint:'#8A969D'
+      },
+      fontFamily: {
+        sans: ['Manrope','ui-sans-serif','system-ui','sans-serif'],
+        serif: ['"Instrument Serif"','Georgia','serif'],
+        display: ['"Inter Tight"','Manrope','ui-sans-serif','sans-serif']
+      }
+    }
+  }
+}
+</script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#050505;overflow-x:hidden;overflow-x:clip}
+  ::selection{background:#00D6FF;color:#050505}
+  :focus-visible{outline:2px solid #00D6FF;outline-offset:2px;border-radius:6px}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:#050505}
+  ::-webkit-scrollbar-thumb{background:#1E3A45;border-radius:8px;border:2px solid #050505}
+  input,select,textarea{color-scheme:dark}
+  img{max-width:100%}
+  .mask-fade-x{-webkit-mask-image:linear-gradient(to right,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(to right,transparent,#000 12%,#000 88%,transparent)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-33.3333%)}}
+  .marquee-track{animation:marquee 32s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .floaty{animation:floaty 6s ease-in-out infinite}
+  @keyframes glowPulse{0%,100%{opacity:.45}50%{opacity:.85}}
+  .glow-pulse{animation:glowPulse 7s ease-in-out infinite}
+  @keyframes softping{0%{transform:scale(1);opacity:.35}75%,100%{transform:scale(1.55);opacity:0}}
+  .wa-ping{animation:softping 2.8s cubic-bezier(0,0,.2,1) infinite}
+  .acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s cubic-bezier(.4,0,.2,1)}
+  .acc-body.open{grid-template-rows:1fr}
+  .acc-inner{overflow:hidden}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  .fade-in{animation:fadeIn .25s ease-out}
+  .paint-fade{animation:paintFade .45s ease-out}
+  @keyframes paintFade{from{opacity:.35}to{opacity:1}}
+  input[type="color"].paint-custom{-webkit-appearance:none;appearance:none;border:none;padding:0;background:transparent;width:44px;height:44px;border-radius:9999px;cursor:pointer;overflow:hidden}
+  input[type="color"].paint-custom::-webkit-color-swatch-wrapper{padding:0}
+  input[type="color"].paint-custom::-webkit-color-swatch{border:2px solid rgba(255,255,255,0.25);border-radius:9999px}
+  input[type="color"].paint-custom::-moz-color-swatch{border:2px solid rgba(255,255,255,0.25);border-radius:9999px}
+  @keyframes lightIn{from{opacity:0;transform:scale(.96) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
+  .light-in{animation:lightIn .28s cubic-bezier(.16,1,.3,1)}
+
+  /* Originkit "Neon Border" (variant 2) — shared by Services + ORISON Standard */
+  .neon{
+    position:relative;height:100%;border-radius:8px;
+    -webkit-box-shadow:0 5px 5px 0 rgba(0,0,0,0.3), 0 0 20px -4px rgba(0,214,255,0.4);
+    -moz-box-shadow:0 5px 5px 0 rgba(0,0,0,0.3), 0 0 20px -4px rgba(0,214,255,0.4);
+    box-shadow:0 5px 5px 0 rgba(0,0,0,0.3), 0 0 20px -4px rgba(0,214,255,0.4);
+    -webkit-transition:box-shadow .3s ease;-moz-transition:box-shadow .3s ease;-o-transition:box-shadow .3s ease;transition:box-shadow .3s ease;
+  }
+  .neon:hover{
+    -webkit-box-shadow:0 10px 26px 0 rgba(0,0,0,0.5), 0 0 38px -2px rgba(0,214,255,0.65);
+    -moz-box-shadow:0 10px 26px 0 rgba(0,0,0,0.5), 0 0 38px -2px rgba(0,214,255,0.65);
+    box-shadow:0 10px 26px 0 rgba(0,0,0,0.5), 0 0 38px -2px rgba(0,214,255,0.65);
+  }
+  .neon-clip{
+    position:relative;height:100%;border-radius:8px;overflow:hidden;
+    padding:2px;isolation:isolate;background:#0B2E3B;
+  }
+  .neon-clip::before{
+    content:"";position:absolute;left:50%;top:50%;
+    width:170%;height:170%;
+    transform:translate(-50%,-50%) rotate(0deg);
+    background:-webkit-linear-gradient(to right,#0B7FA4,#00BFF3,#FFFFFF,#00D6FF,#0B7FA4);
+    background:linear-gradient(to right,#0B7FA4,#00BFF3,#FFFFFF,#00D6FF,#0B7FA4);
+    -webkit-animation:neonSpin 5s linear infinite;
+    animation:neonSpin 5s linear infinite;
+    animation-delay:var(--beamDelay,0s);
+    will-change:transform;
+  }
+  @keyframes neonSpin{
+    0%{-webkit-transform:translate(-50%,-50%) rotate(0deg);transform:translate(-50%,-50%) rotate(0deg)}
+    100%{-webkit-transform:translate(-50%,-50%) rotate(360deg);transform:translate(-50%,-50%) rotate(360deg)}
+  }
+  .neon-clip .neon-inner{
+    position:relative;z-index:1;height:100%;border-radius:6px;
+    border:1px solid rgba(0,214,255,0.15);
+  }
+
+  /* Basic Card (cyan gradient) — inside .neon for Our Services */
+  .basic-card{
+    position:relative;display:flex;flex-direction:column;border-radius:6px;
+    background-image:linear-gradient(to bottom right,#06323F,#0B7FA4);
+    border:1px solid rgba(0,214,255,0.15);
+  }
+  .basic-card .card-content{padding:30px;flex:1 1 auto;}
+  .basic-card .card-title{display:block;font-size:22px;font-weight:800;letter-spacing:.01em;color:#FFFFFF;}
+  .basic-card .card-text{line-height:1.6;color:#C7D0D5;font-size:14px;}
+  .basic-card .card-link{padding:25px;}
+  .basic-card .card-link a{
+    text-decoration:none;position:relative;display:inline-block;
+    padding:10px 0;font-size:12px;font-weight:700;
+    letter-spacing:.18em;text-transform:uppercase;cursor:pointer;
+  }
+  .basic-card .card-link a:after{
+    top:30px;content:"";display:block;height:2px;left:50%;position:absolute;width:0;
+    -webkit-transition:width 0.3s ease 0s,left 0.3s ease 0s;
+    -moz-transition:width 0.3s ease 0s,left 0.3s ease 0s;
+    -o-transition:width 0.3s ease 0s,left 0.3s ease 0s;
+    transition:width 0.3s ease 0s,left 0.3s ease 0s;
+  }
+  .basic-card .card-link a:hover:after{width:100%;left:0;}
+  .basic-card .svc-icon{
+    display:flex;height:42px;width:42px;align-items:center;justify-content:center;
+    border-radius:12px;transition:border-color .3s ease;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.14);color:#FFFFFF;
+  }
+  .basic-card:hover .svc-icon{border-color:rgba(255,255,255,0.6);}
+  .basic-card .svc-num{font-size:11px;font-weight:800;letter-spacing:.22em;color:rgba(234,251,255,0.75);}
+  .basic-card .card-link{border-top:1px solid rgba(255,255,255,0.3);}
+  .basic-card .card-link a{color:#FFFFFF;}
+  .basic-card .card-link a:after{background:#FFFFFF;}
+  .basic-card:hover{border-color:rgba(0,214,255,0.45);}
+
+  /* Map + info card */
+  .map{
+    display:flex;align-items:stretch;
+    background:#101418;border:1px solid rgba(255,255,255,0.1);
+    border-radius:24px;overflow:hidden;
+    -webkit-box-shadow:0 0 40px -10px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 40px -10px rgba(0,0,0,0.8);
+    box-shadow:0 0 40px -10px rgba(0,0,0,0.8);
+  }
+  .map-embed{
+    width:65%;min-height:380px;border:0;display:block;
+    -webkit-filter:grayscale(1) invert(0.92) hue-rotate(180deg) brightness(0.92) contrast(0.92);
+    filter:grayscale(1) invert(0.92) hue-rotate(180deg) brightness(0.92) contrast(0.92);
+  }
+  .map-c{width:35%;padding:26px;display:flex;flex-direction:column;box-sizing:border-box}
+  .map-title{margin:0;font-weight:800;font-size:21px;color:#FFFFFF}
+  .map-text{font-size:13px;line-height:1.6;margin:14px 0 18px;color:#C7D0D5}
+  .det{font-size:12.5px;line-height:1.45;margin-bottom:12px;color:#EAFBFF;display:flex;align-items:flex-start;gap:9px}
+  .det svg{flex:none;margin-top:2px;color:#00D6FF}
+  .map-btns{margin-top:auto;padding-top:16px;display:flex;gap:10px}
+  .map-btn{
+    display:flex;flex-direction:column;align-items:center;gap:7px;
+    margin:0;padding:13px 18px;cursor:pointer;background:none;
+    color:#EAFBFF;border:2px solid rgba(255,255,255,0.18);border-radius:8px;
+    text-decoration:none;font-size:11px;font-weight:700;letter-spacing:.04em;
+    -webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;
+  }
+  .map-btn:hover{border-color:#00D6FF;color:#FFFFFF;background:rgba(0,214,255,0.08)}
+  @media only screen and (max-width:760px){
+    .map{flex-direction:column}
+    .map-embed{width:100%;height:220px;min-height:0}
+    .map-c{width:100%}
+  }
+  @media only screen and (max-width:460px){
+    .map-text{display:none}
+    .map-title{margin-bottom:4px}
+    .det{margin-bottom:9px}
+  }
+
+  .scrollbar-hide{scrollbar-width:none}
+  .scrollbar-hide::-webkit-scrollbar{display:none}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    html{scroll-behavior:auto}
+    .neon-clip::before{animation:none;-webkit-transform:translate(-50%,-50%) rotate(45deg);transform:translate(-50%,-50%) rotate(45deg);opacity:.5}
+  }
+</style>
+</head>
+<body class="bg-ink font-sans text-soft antialiased">
+<div id="root"></div>
+<noscript>
+  <div style="padding:2.5rem 1.5rem;text-align:center;font-family:system-ui,sans-serif;background:#050505;color:#FFFFFF">
+    <h1 style="margin:0 0 .75rem;font-size:1.8rem;font-weight:800;letter-spacing:.05em">ORISON CAR CARE</h1>
+    <p style="margin:0 0 .5rem;color:#C7D0D5">Professional car care, painting, denting and detailing — Karnataka, India.</p>
+    <p style="margin:0;color:#C7D0D5">Please enable JavaScript to view this site. Call us: <a href="tel:+919738773785" style="color:#00D6FF">+91 97387 73785</a></p>
+  </div>
+</noscript>
+
+<script type="text/babel" data-presets="react">
+const {useState, useEffect, useRef} = React;
+
+/* ---------------- Business constants ---------------- */
+const PHONE_DISPLAY = '+91 97387 73785';
+const PHONE_TEL = 'tel:+919738773785';
+const WA_BASE = 'https://wa.me/919738773785';
+const WA_DEFAULT = WA_BASE + '?text=' + encodeURIComponent("Hi ORISON CAR CARE! I'd like to book a service for my car.");
+const EMAIL = 'Orisoncarcare@gmail.com';
+const MAPS = 'https://www.google.com/maps/search/?api=1&query=14.470380,75.898223';
+const MAPS_DIR = 'https://www.google.com/maps/dir/?api=1&destination=14.470380,75.898223';
+const MAPS_EMBED = 'https://maps.google.com/maps?q=14.470380,75.898223&hl=en&z=15&output=embed';
+const IG = 'https://www.instagram.com/orisoncarcare';
+const YT = 'https://youtube.com/@orisoncarcare0313';
+const VIDEO = 'https://cdn.sceneai.art/Hero%20Section%20Video/50b4f304-cdca-4e12-8735-580d225834be.mp4';
+
+/* To use the exact logo artwork instead of this SVG recreation:
+   save the attached logo as images/logo.png and replace <Swoosh/> + text with <img src="images/logo.png"/> */
+
+/* =====================================================================
+   PHOTO FILES — save your uploaded photos in an "images" folder next to
+   this HTML file. Any of .jpg / .jpeg / .png / .webp works for each name
+   (the code tries every extension automatically):
+
+   images/work-paint-before.*   Innova sanded panel (body repair)
+   images/work-paint-after.*    Innova painted front
+   images/work-paint-side.*     Innova glossy side
+   images/work-paint-rear.*     Innova rear view (optional)
+   images/work-headlights.*     Headlight before/after collage
+   images/work-engine-1.*       BMW engine (before detailing)
+   images/work-engine-2.*       BMW engine (after detailing)
+   ===================================================================== */
+
+/* Candidate URL builder: tries name.jpg, .jpeg, .png, .webp in order */
+const IMGS = name => [
+  'images/' + name + '.jpg',
+  'images/' + name + '.jpeg',
+  'images/' + name + '.png',
+  'images/' + name + '.webp'
+];
+
+/* ---------------- Paint visualizer (imgix recolourable demo car) ---------------- */
+const PAINT_BASE = 'https://ddools.imgix.net/cars/base.png?w=600&mark-align=center,middle&mark=https%3A%2F%2Fddools.imgix.net%2Fcars%2Fpaint.png%3Fw%3D600%26bri%3D-18%26con%3D26%26monochrome%3D';
+const PAINT_SWATCHES = [
+  {hex:'000000', css:'#000000', name:'Jet Black'},
+  {hex:'0d4671', css:'#0d4671', name:'Deep Ocean Blue'},
+  {hex:'63803a', css:'#63803a', name:'Forest Green'},
+  {hex:'841210', css:'#841210', name:'Racing Red'},
+  {hex:'none',   css:'#a09e9f', name:'Silver Original'}
+];
+
+/* ---------------- Content data ---------------- */
+const NAV_LINKS = [
+  {id:'home', label:'Home'}, {id:'about', label:'About'}, {id:'services', label:'Services'},
+  {id:'gallery', label:'Gallery'}, {id:'contact', label:'Contact'}
+];
+
+const SERVICES = [
+  {num:'01', icon:'spray',   name:'Car Painting',      desc:'Professional automotive painting and premium finish restoration.'},
+  {num:'02', icon:'wrench',  name:'Car Denting',       desc:'Professional dent repair and body restoration.'},
+  {num:'03', icon:'shield',  name:'Underbody Coating', desc:'Protect the vehicle underbody from moisture, dirt and corrosion.'},
+  {num:'04', icon:'bulb',    name:'Headlight Buffing', desc:'Restore clarity, brightness and appearance of headlights.'},
+  {num:'05', icon:'drop',    name:'Car Washing',       desc:'Professional exterior cleaning and vehicle washing.'},
+  {num:'06', icon:'seat',    name:'Interior Cleaning', desc:'Deep cleaning for seats, dashboard, carpets and interior surfaces.'},
+  {num:'07', icon:'sparkle', name:'Car Detailing',     desc:'Complete interior and exterior detailing for a premium finish.'}
+];
+const SERVICE_POINTS = ['Vehicle inspection before every job','Quality products and modern equipment','Clear estimate before work begins'];
+
+const STATS = [
+  {to:500, suffix:'+', label:'Cars Serviced'},
+  {to:20,  suffix:'+', label:'Years Experience'},
+  {to:100, suffix:'%', label:'Customer Focus'}
+];
+
+const ABOUT_POINTS = ['Professional workmanship','Experienced team','Quality products','Modern equipment','Customer-first service','Attention to detail'];
+
+const BENEFITS = ['Deep Cleaning','Paint Enhancement','Premium Finish','Professional Restoration','Long-Lasting Protection'];
+
+const WHY = [
+  {icon:'users', title:'Professional Team',      text:'Experienced automotive professionals focused on quality workmanship.'},
+  {icon:'award', title:'Premium Products',       text:'We use quality automotive care and finishing products.'},
+  {icon:'zap',   title:'Advanced Equipment',     text:'Modern tools and professional automotive equipment.'},
+  {icon:'chat',  title:'Transparent Service',    text:'Clear communication and straightforward service recommendations.'},
+  {icon:'thumb', title:'Customer Satisfaction',  text:'Every service is performed with attention to customer expectations.'},
+  {icon:'clip',  title:'Quality Assurance',      text:'Detailed inspection and quality-focused delivery.'}
+];
+
+const PROCESS = [
+  {n:'01', title:'Book',    text:'Schedule your service.'},
+  {n:'02', title:'Inspect', text:'Our team checks your vehicle.'},
+  {n:'03', title:'Service', text:'Professional work is completed.'},
+  {n:'04', title:'Deliver', text:'Receive your vehicle clean, restored and ready.'}
+];
+
+const CATS = ['All','Painting','Denting','Detailing','Headlights','Workshop'];
+/* Gallery — each entry carries a candidate list so any extension works */
+const GALLERY = [
+  {srcs:IMGS('work-paint-before'),  title:'Body repair & paint prep',      cat:['Denting','Workshop'], alt:'Toyota Innova side panel sanded to primer during dent repair before painting'},
+  {srcs:IMGS('work-paint-after'),   title:'Full body repaint — front',     cat:['Painting'],           alt:'Toyota Innova front view after a full body repaint at ORISON CAR CARE'},
+  {srcs:IMGS('work-paint-side'),    title:'Full body repaint — gloss',     cat:['Painting'],           alt:'Toyota Innova side profile with glossy fresh paint finish'},
+  {srcs:IMGS('work-paint-rear'),    title:'Full body repaint — rear',      cat:['Painting'],           alt:'Toyota Innova rear three-quarter view after a full body repaint'},
+  {srcs:IMGS('work-headlights'),    title:'Headlight buffing & restore',   cat:['Headlights'],         alt:'Headlight restoration before and after comparison on an SUV'},
+  {srcs:IMGS('work-engine-1'),      title:'Engine bay — before detailing', cat:['Detailing'],          alt:'BMW engine bay before deep cleaning and detailing'},
+  {srcs:IMGS('work-engine-2'),      title:'Engine bay — after detailing',  cat:['Detailing'],          alt:'BMW engine bay after deep cleaning, dressing and detailing'}
+];
+
+const TESTIMONIALS = [
+  {name:'Rakesh Gowda', car:'Toyota Innova Crysta', service:'Full body paint', rating:5,
+   text:'My Innova came back looking better than the day I bought it. The paint finish is deep, glossy and perfectly even — genuinely impressed by the attention to detail.'},
+  {name:'Sushma H.', car:'Hyundai i20', service:'Interior detailing', rating:5,
+   text:'They cleaned every corner of the interior — seats, roof, dashboard — and it feels brand new again. Professional team, fair pricing, zero drama.'},
+  {name:'Imran K.', car:'BMW 3 Series', service:'Engine bay detailing', rating:5,
+   text:'Careful, knowledgeable people. They explained exactly what my car needed and what it did not. The engine bay work was meticulous.'},
+  {name:'Vinay Patil', car:'Mahindra Xylo', service:'Headlight buffing', rating:5,
+   text:'Headlights that were yellow and dull for years look crystal clear again. Done in a few hours at a very reasonable price.'},
+  {name:'Anitha R.', car:'Maruti Swift', service:'Underbody coating', rating:5,
+   text:'Booked on WhatsApp, got honest advice and quick service. The car feels far more planted over rough roads now. Highly recommended.'}
+];
+
+const FAQS = [
+  {q:'How do I book a service?',
+   a:'Call or WhatsApp us at +91 97387 73785 — send us a message with the service you need and we confirm your slot right away.'},
+  {q:'How long does a typical service take?',
+   a:'It depends on the job — washing and interior cleaning are usually same-day, while paint and denting work can take a few days depending on the panels involved. We always share a clear timeline before we start.'},
+  {q:'What products and equipment do you use?',
+   a:'We work with quality automotive paints, coatings and care products, along with professional-grade tools — chosen to suit your vehicle and your budget.'},
+  {q:'Will I get an estimate before work begins?',
+   a:'Always. Every vehicle is inspected first and we share a clear, upfront estimate before any work starts. No hidden charges, no surprises.'}
+];
+
+/* ---------------- Icons ---------------- */
+const ICONS = {
+  spray:'<rect x="8" y="10" width="8" height="11" rx="2"/><path d="M10 10V7h4v3"/><path d="M12 7V4"/><path d="M9 4h6"/><path d="M19 6h.01M21.5 9h.01M19 12h.01"/>',
+  wrench:'<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>',
+  shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/>',
+  bulb:'<path d="M13 5C8.5 4.3 4 7.2 4 12s4.5 7.7 9 7c1.3-.2 2.3-.7 3-1.4V6.4c-.7-.7-1.7-1.2-3-1.4z"/><path d="M19.5 8H21M19.5 12H21M19.5 16H21"/>',
+  drop:'<path d="M12 3s6 6.6 6 10.4A6 6 0 0 1 6 13.4C6 9.6 12 3 12 3z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/>',
+  seat:'<path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"/><path d="M5 18v2M19 18v2"/>',
+  sparkle:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/>',
+  users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+  award:'<circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/>',
+  zap:'<path d="M13 2 3 14h7l-1 8 11-14h-7l0-6z"/>',
+  chat:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+  thumb:'<path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/>',
+  clip:'<rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/>',
+  phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/>',
+  pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+  nav:'<path d="m3 11 19-9-9 19-2-8-8-2z"/>',
+  star:'<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>',
+  check:'<path d="M20 6 9 17l-5-5"/>',
+  arrow:'<path d="M5 12h14M12 5l7 7-7 7"/>',
+  x:'<path d="M18 6 6 18M6 6l12 12"/>',
+  menu:'<path d="M4 7h16M4 12h16M4 17h16"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  chevDown:'<path d="m6 9 6 6 6-6"/>',
+  chevL:'<path d="m15 18-6-6 6-6"/>',
+  chevR:'<path d="m9 18 6-6-6-6"/>',
+  drag:'<path d="m9 8-4 4 4 4M15 8l4 4-4 4"/>',
+  zoom:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/>',
+  ig:'<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+  yt:'<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.92 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><path d="m9.75 15.02 5.75-3.27-5.75-3.27z"/>',
+  quote:'<path d="M10 8c-3.3.6-5 2.8-5 6v2h5v-6H8c.2-1 .9-1.6 2-2V8zm9 0c-3.3.6-5 2.8-5 6v2h5v-6h-2c.2-1 .9-1.6 2-2V8z"/>',
+  wa:'<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>'
+};
+const FILLED = ['star','quote','wa'];
+function Icon({name, size=20, className='', sw=1.7}) {
+  const filled = FILLED.includes(name);
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true" className={className}
+      fill={filled ? 'currentColor' : 'none'} stroke={filled ? 'none' : 'currentColor'}
+      strokeWidth={filled ? 0 : sw} strokeLinecap="round" strokeLinejoin="round"
+      dangerouslySetInnerHTML={{__html: ICONS[name]}} />
+  );
+}
+
+/* ---------------- SafeImg: multi-source fallback + branded placeholder ----------------
+   `sources` is an array of candidate URLs tried in order (.jpg/.jpeg/.png/.webp).
+   If every candidate fails, renders a styled brand placeholder — never a broken
+   image icon or raw alt text. fit="cover" (default) or "contain". */
+function SafeImg({sources, alt, className='', imgClassName='', fit='cover', label}) {
+  const list = Array.isArray(sources) ? sources : [sources];
+  const key = list.join('|');
+  const [idx, setIdx] = useState(0);
+  const [failed, setFailed] = useState(false);
+  useEffect(() => { setIdx(0); setFailed(false); }, [key]);
+  if (failed || idx >= list.length) {
+    return (
+      <div className={'flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-[#06323F] to-[#0B7FA4] text-center ' + className}
+        role="img" aria-label={alt}>
+        <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-white">
+          <Icon name="spray" size={26} />
+        </span>
+        <span className="px-4 text-xs font-semibold uppercase tracking-[0.2em] text-soft">
+          {label || 'ORISON CAR CARE'}
+        </span>
+      </div>
+    );
+  }
+  return (
+    <img src={list[idx]} alt={alt} loading="lazy" decoding="async"
+      onError={() => { if (idx + 1 < list.length) setIdx(idx + 1); else setFailed(true); }}
+      className={imgClassName}
+      style={fit === 'cover'
+        ? {width:'100%', height:'100%', display:'block', objectFit:'cover', objectPosition:'center'}
+        : {width:'100%', height:'100%', display:'block', objectFit:'contain', objectPosition:'center'}} />
+  );
+}
+
+/* ---------------- Brand logo ---------------- */
+const Swoosh = ({className=''}) => (
+  <svg viewBox="0 0 200 42" fill="none" className={className} aria-hidden="true">
+    <path d="M4 34 C 30 8, 70 2, 104 7 C 136 12, 160 22, 176 24 C 186 25, 193 16, 197 5"
+      stroke="#00D6FF" strokeWidth="4" strokeLinecap="round"/>
+  </svg>
+);
+function Logo() {
+  return (
+    <a href="#home" className="inline-flex flex-col items-center" aria-label="ORISON CAR CARE — home">
+      <img src="images/logo.png" alt="Orison Car Care Logo" className="h-10 object-contain" />
+    </a>
+  );
+}
+function LogoStacked() {
+  return (
+    <a href="#home" className="inline-flex flex-col items-center" aria-label="ORISON CAR CARE — home">
+      <img src="images/logo.png" alt="Orison Car Care Logo" className="h-20 object-contain" />
+    </a>
+  );
+}
+
+/* ---------------- Animation primitives ---------------- */
+function FadeInUp({children, delay=0, y=40, className=''}) {
+  const ref = useRef(null);
+  const [vis, setVis] = useState(false);
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { setVis(true); io.disconnect(); }
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className={className}
+      style={{opacity: vis ? 1 : 0, transform: vis ? 'translateY(0)' : 'translateY(' + y + 'px)',
+        transition: 'opacity 1000ms cubic-bezier(.16,1,.3,1) ' + delay + 'ms, transform 1000ms cubic-bezier(.16,1,.3,1) ' + delay + 'ms',
+        willChange: 'opacity, transform'}}>
+      {children}
+    </div>
+  );
+}
+
+const EM = ({children}) => <span className="font-serif italic font-normal text-[1.08em] text-accent">{children}</span>;
+
+const KICK = 'mb-4 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.3em] text-accent';
+const BTN_P = 'inline-flex items-center justify-center gap-2 rounded-full bg-accent px-7 py-3 text-sm font-bold text-ink transition-all duration-300 hover:bg-[#3DE4FF] hover:shadow-[0_10px_36px_rgba(0,214,255,0.35)] active:scale-95';
+const BTN_D = 'inline-flex items-center justify-center gap-2 rounded-full border border-accent/50 bg-transparent px-7 py-3 text-sm font-bold text-accent transition-all duration-300 hover:bg-accent/10 hover:border-accent active:scale-95';
+
+function SectionHead({kicker, title, sub}) {
+  return (
+    <FadeInUp className="text-center">
+      <p className={KICK + ' justify-center'}><span className="h-px w-8 bg-accent/60"></span>{kicker}<span className="h-px w-8 bg-accent/60"></span></p>
+      <h2 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">{title}</h2>
+      {sub && <p className="mx-auto mt-4 max-w-2xl text-[15px] leading-relaxed text-muted">{sub}</p>}
+    </FadeInUp>
+  );
+}
+
+/* ---------------- Navbar ---------------- */
+function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState('home');
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 20);
+      const y = window.scrollY + 160;
+      let cur = 'home';
+      NAV_LINKS.forEach(l => {
+        const el = document.getElementById(l.id);
+        if (el && el.offsetTop <= y) cur = l.id;
+      });
+      setActive(cur);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return (
+    <header className={'fixed inset-x-0 top-0 z-50 transition-all duration-500 ' + (scrolled || open ? 'border-b border-white/5 bg-black/80 backdrop-blur-md' : 'bg-transparent')}>
+      <div className={'mx-auto flex max-w-7xl items-center justify-between px-6 transition-all duration-500 ' + (scrolled ? 'py-2.5' : 'py-4')}>
+        <Logo />
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+          {NAV_LINKS.map(l => (
+            <a key={l.id} href={'#' + l.id} aria-current={active === l.id ? 'page' : undefined}
+              className={'relative text-sm font-semibold transition-colors duration-300 ' + (active === l.id ? 'text-accent' : 'text-white hover:text-accent')}>
+              {l.label}
+              {active === l.id && <span className="absolute -bottom-1.5 left-0 right-0 h-px bg-accent"></span>}
+            </a>
+          ))}
+        </nav>
+        <div className="flex items-center gap-3">
+          <a href="#contact" className="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold text-ink transition-all duration-300 hover:bg-[#3DE4FF] hover:shadow-[0_8px_28px_rgba(0,214,255,0.35)] active:scale-95 sm:inline-flex">Book a Service</a>
+          <button onClick={() => setOpen(o => !o)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open}
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10 hover:text-accent md:hidden">
+            <Icon name={open ? 'x' : 'menu'} size={18} />
+          </button>
+        </div>
+      </div>
+      <div className={'overflow-hidden transition-all duration-500 ease-out md:hidden ' + (open ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0')}>
+        <nav className="flex flex-col gap-1 border-t border-white/5 bg-black/90 px-6 py-5 backdrop-blur-md" aria-label="Mobile">
+          {NAV_LINKS.map((l, i) => (
+            <a key={l.id} href={'#' + l.id} onClick={() => setOpen(false)}
+              className={'rounded-xl px-4 py-3 text-sm font-semibold transition-colors ' + (active === l.id ? 'bg-accent/10 text-accent' : 'text-white hover:bg-white/5 hover:text-accent')}
+              style={{transitionDelay: open ? (i * 40) + 'ms' : '0ms'}}>
+              {l.label}
+            </a>
+          ))}
+          <a href="#contact" onClick={() => setOpen(false)} className="mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-ink">Book a Service <Icon name="arrow" size={15}/></a>
+        </nav>
+      </div>
+    </header>
+  );
+}
+
+/* ---------------- Hero (single <h1>) ---------------- */
+function Hero() {
+  return (
+    <section id="home" className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pb-24 pt-32 scroll-mt-24">
+      <video className="absolute inset-0 -z-10 h-full w-full object-cover opacity-90" src={VIDEO} autoPlay muted loop playsInline preload="auto" aria-hidden="true"></video>
+      <div className="glow-pulse pointer-events-none absolute left-1/2 top-[36%] -z-10 h-[480px] w-[min(820px,100vw)] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/50 via-black/20 to-black"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-black/40 via-transparent to-black/40"></div>
+
+      <FadeInUp className="max-w-full px-4">
+        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium text-soft backdrop-blur-sm">
+          <Icon name="sparkle" size={13} className="text-accent" />
+          Now booking — message us on WhatsApp
+        </div>
+      </FadeInUp>
+
+      <FadeInUp delay={120} className="max-w-full px-4">
+        <h1 className="mb-6 text-center leading-[1.05]">
+          <span className="block font-display text-5xl font-extrabold uppercase tracking-[-0.01em] text-white md:text-7xl">ORISON CAR CARE</span>
+          <span className="mt-4 block text-base font-semibold uppercase tracking-[0.4em] text-muted md:mt-6 md:text-lg">Needy <span className="text-accent">Solutions</span></span>
+        </h1>
+      </FadeInUp>
+
+      <FadeInUp delay={240} className="max-w-full px-6">
+        <p className="mb-10 max-w-2xl text-center text-[16px] leading-relaxed text-muted">
+          Complete automotive care, restoration and detailing designed to keep your vehicle looking its best and performing at its peak.
+        </p>
+      </FadeInUp>
+
+      <FadeInUp delay={360}>
+        <div className="flex flex-wrap items-center justify-center gap-4 px-4">
+          <a href="#contact" className={BTN_P}>Book a Service <Icon name="arrow" size={15} /></a>
+          <a href="#services" className={BTN_D}>Explore Services</a>
+        </div>
+      </FadeInUp>
+
+      <FadeInUp delay={480}>
+        <p className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 text-[11px] uppercase tracking-[0.28em] text-faint md:text-xs">
+          <span>Professional Care</span><span className="h-1 w-1 rounded-full bg-accent"></span>
+          <span>Quality Products</span><span className="h-1 w-1 rounded-full bg-accent"></span>
+          <span>Experienced Team</span>
+        </p>
+      </FadeInUp>
+
+      <div className="floaty absolute right-6 top-[24%] z-10 hidden w-60 flex-col gap-2 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-md xl:right-12 lg:flex">
+        <div className="flex gap-1 text-accent">{[0,1,2,3,4].map(i => <Icon key={i} name="star" size={13} />)}</div>
+        <p className="text-2xl font-bold leading-none text-white">500<span className="text-accent">+</span></p>
+        <p className="text-xs leading-relaxed text-muted">Cars serviced by our experienced team across Karnataka.</p>
+      </div>
+
+      <div className="absolute bottom-7 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-1.5 text-faint">
+        <span className="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+        <Icon name="chevDown" size={16} className="animate-bounce" />
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Marquee ---------------- */
+function Marquee() {
+  const track = [...SERVICES, ...SERVICES, ...SERVICES];
+  return (
+    <section aria-label="Our services ticker" className="py-12 md:py-16">
+      <p className="mb-8 text-center text-sm font-medium text-faint">Everything your car needs — under one roof</p>
+      <div className="marquee mask-fade-x w-full overflow-hidden">
+        <div className="marquee-track flex w-max items-center">
+          {track.map((s, i) => (
+            <div key={i} className="flex flex-shrink-0 items-center px-8 text-muted">
+              <Icon name={s.icon} size={18} className="text-faint" />
+              <span className="ml-3 whitespace-nowrap text-sm font-semibold tracking-wide">{s.name}</span>
+              <span className="ml-14 h-1 w-1 rounded-full bg-accent/70"></span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Stats ---------------- */
+function Counter({to, duration=1800}) {
+  const ref = useRef(null);
+  const started = useRef(false);
+  const [v, setV] = useState(0);
+  useEffect(() => {
+    const el = ref.current; if (!el) return;
+    const io = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting && !started.current) {
+        started.current = true;
+        const t0 = performance.now();
+        const tick = t => {
+          const p = Math.min(1, (t - t0) / duration);
+          setV(Math.round(to * (1 - Math.pow(1 - p, 3))));
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        io.disconnect();
+      }
+    }, {threshold: 0.4});
+    io.observe(el);
+    return () => io.disconnect();
+  }, [to, duration]);
+  return <span ref={ref}>{v}</span>;
+}
+function Stats() {
+  return (
+    <section aria-label="Our track record" className="border-y border-white/5 bg-panel">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-16 text-center sm:grid-cols-3">
+        {STATS.map((s, i) => (
+          <FadeInUp key={s.label} delay={i * 120}>
+            <p className="text-5xl font-bold tracking-tight text-white md:text-6xl"><Counter to={s.to} /><span className="text-accent">{s.suffix}</span></p>
+            <p className="mt-3 text-sm tracking-wide text-muted">{s.label}</p>
+          </FadeInUp>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Paint Colour Visualizer ---------------- */
+function PaintVisualizer() {
+  const [hex, setHex] = useState('000000');
+  const selected = PAINT_SWATCHES.find(s => s.hex === hex);
+  const colourLabel = selected ? selected.name : ('Custom #' + hex.toUpperCase());
+  return (
+    <FadeInUp className="mx-auto mt-16 w-full max-w-7xl px-6">
+      <div className="grid items-center gap-10 overflow-hidden rounded-3xl border border-white/10 bg-card p-6 md:p-10 lg:grid-cols-2 lg:gap-14">
+        <div className="relative min-h-[220px]">
+          <div className="pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/[0.06] blur-2xl"></div>
+          <img key={hex} className="paint-fade relative mx-auto block h-[300px] w-full max-w-[520px] object-contain"
+            src={PAINT_BASE + hex}
+            alt={'Interactive demo car previewing the paint colour ' + colourLabel}
+            loading="lazy" decoding="async" />
+          <span className="absolute left-1/2 top-2 -translate-x-1/2 whitespace-nowrap rounded-full border border-white/10 bg-black/60 px-3.5 py-1 text-[10px] font-semibold uppercase tracking-[0.25em] text-white backdrop-blur">{colourLabel}</span>
+        </div>
+        <div>
+          <p className={KICK}><span className="h-px w-8 bg-accent/60"></span>Paint Visualizer</p>
+          <h3 className="text-3xl font-bold tracking-tight text-white md:text-4xl">Try your colour before you <EM>book.</EM></h3>
+          <p className="mt-4 max-w-md text-sm leading-relaxed text-muted">
+            Pick a shade or create your own with the custom picker — then book your paint job with that colour noted for our team.
+          </p>
+          <div className="mt-7 flex flex-wrap items-center gap-3" role="group" aria-label="Paint colour options">
+            {PAINT_SWATCHES.map(s => (
+              <button key={s.hex} onClick={() => setHex(s.hex)} aria-label={'Paint colour: ' + s.name} aria-pressed={hex === s.hex}
+                title={s.name}
+                className={'h-11 w-11 rounded-full border-2 transition-all duration-300 hover:scale-110 active:scale-95 ' + (hex === s.hex ? 'border-accent shadow-[0_0_0_3px_rgba(0,214,255,0.35)]' : 'border-white/25')}
+                style={{backgroundColor: s.css}}></button>
+            ))}
+            <label className="relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border-2 border-white/25 transition-transform duration-300 hover:scale-110 active:scale-95"
+              title="Custom colour" aria-label="Pick a custom paint colour"
+              style={{background:'conic-gradient(#00D6FF,#f5a623,#3ddc84,#0d4671,#00D6FF)'}}>
+              <input type="color" className="paint-custom absolute inset-0 h-full w-full opacity-0"
+                value={'#' + hex} onChange={e => setHex(e.target.value.slice(1))} />
+              <span className="pointer-events-none text-[8px] font-bold uppercase tracking-widest text-white drop-shadow">abc</span>
+            </label>
+          </div>
+          <p className="mt-3 text-xs text-faint">Current colour: <span className="font-semibold text-white">{colourLabel}{selected ? '' : ' (#' + hex.toUpperCase() + ')'}</span></p>
+          <p className="mt-6 text-xs text-faint">Demo render — final colour matched in-workshop under professional lighting.</p>
+        </div>
+      </div>
+    </FadeInUp>
+  );
+}
+
+/* ---------------- About ---------------- */
+function About() {
+  return (
+    <section id="about" className="overflow-x-clip py-24 scroll-mt-24 md:py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2 lg:gap-20">
+        <FadeInUp>
+          <div className="relative overflow-hidden rounded-3xl border border-white/10">
+            <div className="pointer-events-none absolute inset-0 bg-accent/5"></div>
+            <div className="h-[320px] sm:h-[420px] md:h-[520px]">
+              <SafeImg sources={[...IMGS('work-paint-after'), ...IMGS('ba-after')]} fit="cover"
+                alt="Toyota Innova after a full body repaint at ORISON CAR CARE"
+                label="Full body repaint" />
+            </div>
+            <div className="absolute right-5 top-5 rounded-full border border-white/10 bg-black/60 px-4 py-1.5 text-[10px] uppercase tracking-[0.25em] text-white backdrop-blur">20+ Years of Craft</div>
+            <div className="absolute bottom-4 left-4 w-32 -rotate-3 overflow-hidden rounded-2xl border-2 border-accent/70 shadow-2xl sm:w-40 md:w-48">
+              <div className="h-24 sm:h-32 md:h-36">
+                <SafeImg sources={IMGS('work-paint-side')} fit="cover"
+                  alt="Glossy fresh paint finish — side profile"
+                  label="Fresh gloss" />
+              </div>
+            </div>
+          </div>
+          <p className="mt-4 text-[10px] uppercase tracking-[0.25em] text-muted">Fresh gloss · Toyota Innova</p>
+        </FadeInUp>
+        <div>
+          <FadeInUp>
+            <p className={KICK}><span className="h-px w-8 bg-accent/60"></span>About ORISON</p>
+            <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">More than car care —<br />it's our <EM>commitment.</EM></h2>
+            <p className="mt-6 max-w-xl leading-relaxed text-muted">
+              ORISON CAR CARE is focused on delivering professional automotive care with attention to quality, craftsmanship and customer satisfaction. From a simple wash to a complete repaint, every vehicle gets the same standard of care.
+            </p>
+          </FadeInUp>
+          <FadeInUp delay={140}>
+            <ul className="mt-8 grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">
+              {ABOUT_POINTS.map(p => (
+                <li key={p} className="flex items-center gap-2.5 text-sm text-soft">
+                  <span className="flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/15 text-accent"><Icon name="check" size={11} sw={2.6} /></span>
+                  {p}
+                </li>
+              ))}
+            </ul>
+          </FadeInUp>
+          <FadeInUp delay={240}>
+            <div className="mt-10">
+              <a href="#services" className={BTN_D}>Learn More</a>
+            </div>
+          </FadeInUp>
+        </div>
+      </div>
+      <PaintVisualizer />
+    </section>
+  );
+}
+
+/* ---------------- Services (Neon Border — variant 2) ---------------- */
+function Services({onLearn}) {
+  return (
+    <section id="services" className="overflow-x-clip py-24 scroll-mt-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <SectionHead kicker="Our Services" title={<>Our Premium Car Care <EM>Services.</EM></>}
+          sub="Seven specialised services, one standard — premium finish, honest advice and professional workmanship on every vehicle." />
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {SERVICES.map((s, i) => (
+            <FadeInUp key={s.num} delay={(i % 4) * 90} className="h-full">
+              <div className="neon h-full" style={{'--beamDelay': (i * -1.2) + 's'}}>
+                <div className="neon-clip">
+                  <div className="neon-inner basic-card">
+                    <div className="card-content">
+                      <div className="mb-6 flex items-start justify-between">
+                        <span className="svc-icon"><Icon name={s.icon} size={20} /></span>
+                        <span className="svc-num">{s.num}</span>
+                      </div>
+                      <span className="card-title">{s.name}</span>
+                      <p className="card-text mt-3">{s.desc}</p>
+                    </div>
+                    <div className="card-link">
+                      <a role="button" tabIndex={0} title="Read Full"
+                        onClick={e => { e.preventDefault(); onLearn(s); }}
+                        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onLearn(s); } }}>
+                        <span>Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </FadeInUp>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Service modal ---------------- */
+function ServiceModal({svc, onClose, onBook}) {
+  useEffect(() => {
+    if (!svc) return;
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = ''; };
+  }, [svc, onClose]);
+  if (!svc) return null;
+  return (
+    <div className="fixed inset-0 z-[70] flex items-end justify-center p-4 sm:items-center sm:p-6" role="dialog" aria-modal="true" aria-label={svc.name}>
+      <div className="fade-in absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose}></div>
+      <div className="light-in relative w-full max-w-md rounded-3xl border border-white/10 bg-panel p-8">
+        <button onClick={onClose} aria-label="Close" className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-muted transition-colors hover:text-white">
+          <Icon name="x" size={16} />
+        </button>
+        <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-accent/30 bg-accent/10 text-accent"><Icon name={svc.icon} size={26} /></span>
+        <p className="mt-5 text-xs font-bold tracking-[0.25em] text-faint">SERVICE {svc.num}</p>
+        <h3 className="mt-1 text-2xl font-bold text-white">{svc.name}</h3>
+        <p className="mt-3 text-sm leading-relaxed text-muted">{svc.desc}</p>
+        <ul className="mt-5 space-y-2.5">
+          {SERVICE_POINTS.map(p => (
+            <li key={p} className="flex items-center gap-2.5 text-sm text-soft">
+              <span className="flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/15 text-accent"><Icon name="check" size={11} sw={2.6} /></span>{p}
+            </li>
+          ))}
+        </ul>
+        <button onClick={() => onBook(svc)} className={BTN_P + ' mt-7 w-full'}>Book this service on WhatsApp <Icon name="arrow" size={15} /></button>
+      </div>
+    </div>
+  );
+}
+
+/* ---------------- Featured showcase ---------------- */
+function Featured() {
+  return (
+    <section aria-label="Featured transformation showcase" className="overflow-x-clip border-y border-white/5 bg-panel py-24 md:py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-12 lg:gap-16">
+        <FadeInUp className="lg:col-span-7">
+          <div className="relative overflow-hidden rounded-3xl border border-white/10">
+            <div className="h-[300px] sm:h-[380px] md:h-[480px]">
+              <SafeImg sources={IMGS('work-paint-side')} fit="cover"
+                alt="Deep glossy paint finish after professional paint restoration"
+                label="Paint restoration" />
+            </div>
+            <div className="absolute right-4 top-4 w-28 -rotate-2 overflow-hidden rounded-xl border-2 border-white/20 shadow-2xl sm:w-36 md:w-44">
+              <div className="h-16 sm:h-20 md:h-24">
+                <SafeImg sources={IMGS('work-paint-before')} fit="cover"
+                  alt="The same vehicle before painting — sanded body filler"
+                  label="Before" />
+              </div>
+              <span className="absolute left-2 top-2 rounded-full border border-white/10 bg-black/80 px-2.5 py-0.5 text-[9px] uppercase tracking-[0.25em] text-soft">Before</span>
+            </div>
+            <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-white/10 bg-black/70 px-5 py-3.5 backdrop-blur">
+              <div className="flex gap-0.5 text-accent">{[0,1,2,3,4].map(i => <Icon key={i} name="star" size={12} />)}</div>
+              <p className="text-xs font-semibold text-white">Paint restoration — Toyota Innova</p>
+            </div>
+          </div>
+        </FadeInUp>
+        <div className="lg:col-span-5">
+          <FadeInUp>
+            <p className={KICK}><span className="h-px w-8 bg-accent/60"></span>Featured Showcase</p>
+            <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">Restore the shine.<br />Protect the <EM>finish.</EM></h2>
+            <p className="mt-6 max-w-lg leading-relaxed text-muted">
+              Our signature transformation combines deep cleaning, paint enhancement and professional restoration — for a deep, lasting finish that turns heads on every drive.
+            </p>
+          </FadeInUp>
+          <FadeInUp delay={140}>
+            <ul className="mt-8 space-y-3">
+              {BENEFITS.map(b => (
+                <li key={b} className="flex items-center gap-3 text-sm text-soft">
+                  <span className="flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/15 text-accent"><Icon name="check" size={11} sw={2.6} /></span>{b}
+                </li>
+              ))}
+            </ul>
+          </FadeInUp>
+          <FadeInUp delay={240}>
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a href="#contact" className={BTN_P}>Book a Service</a>
+              <a href="#gallery" className="text-sm font-semibold text-soft underline-offset-4 transition-colors hover:text-accent hover:underline">View our work</a>
+            </div>
+          </FadeInUp>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Before / After slider (falls back to Gallery filenames) ---------------- */
+function BeforeAfter({beforeSrcs, afterSrcs, beforeAlt, afterAlt}) {
+  const ref = useRef(null);
+  const dragging = useRef(false);
+  const [pos, setPos] = useState(50);
+  const update = clientX => {
+    const r = ref.current.getBoundingClientRect();
+    setPos(Math.min(96, Math.max(4, ((clientX - r.left) / r.width) * 100)));
+  };
+  return (
+    <div ref={ref}
+      className="relative aspect-[16/10] w-full cursor-ew-resize select-none overflow-hidden rounded-3xl border border-white/10 touch-none"
+      role="slider" tabIndex={0} aria-label="Before and after comparison" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(pos)}
+      onPointerDown={e => { dragging.current = true; ref.current.setPointerCapture(e.pointerId); update(e.clientX); }}
+      onPointerMove={e => { if (dragging.current) update(e.clientX); }}
+      onPointerUp={() => { dragging.current = false; }}
+      onKeyDown={e => {
+        if (e.key === 'ArrowLeft') setPos(p => Math.max(4, p - 4));
+        if (e.key === 'ArrowRight') setPos(p => Math.min(96, p + 4));
+      }}>
+      <div className="absolute inset-0">
+        <SafeImg sources={afterSrcs} fit="cover" alt={afterAlt} label="After" />
+      </div>
+      <div className="absolute inset-0" style={{clipPath: 'inset(0 ' + (100 - pos) + '% 0 0)'}}>
+        <SafeImg sources={beforeSrcs} fit="cover" alt={beforeAlt} label="Before" />
+      </div>
+      <span className="absolute left-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-white backdrop-blur">Before</span>
+      <span className="absolute right-4 top-4 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[10px] uppercase tracking-[0.25em] text-white backdrop-blur">After</span>
+      <div className="absolute inset-y-0" style={{left: pos + '%'}}>
+        <div className="absolute inset-y-0 -ml-px w-0.5 bg-white/90"></div>
+        <div className="absolute top-1/2 flex h-11 w-11 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white text-black shadow-xl">
+          <Icon name="drag" size={18} sw={2.2} />
+        </div>
+      </div>
+    </div>
+  );
+}
+function BeforeAfterSection() {
+  return (
+    <section aria-label="Before and after transformation" className="py-24 md:py-32">
+      <div className="mx-auto max-w-4xl px-6">
+        <SectionHead kicker="Before / After" title={<>Real work. Real <EM>results.</EM></>}
+          sub="Drag the handle to compare genuine work from our workshop floor." />
+        <FadeInUp className="mt-12">
+          <BeforeAfter
+            beforeSrcs={[...IMGS('ba-before'), ...IMGS('work-paint-before')]}
+            afterSrcs={[...IMGS('ba-after'), ...IMGS('work-paint-after')]}
+            beforeAlt="Toyota Innova mid body repair — sanded panels and body filler before painting"
+            afterAlt="Toyota Innova after full body repaint with a deep glossy finish" />
+        </FadeInUp>
+        <p className="mt-4 text-center text-sm text-faint">Full body repaint — Toyota Innova</p>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- The ORISON Standard (Neon Border cards) ---------------- */
+function Why() {
+  return (
+    <section aria-label="Why choose ORISON CAR CARE" className="overflow-x-clip py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <SectionHead kicker="The ORISON Standard" title={<>Why choose ORISON CAR CARE<span className="text-accent">?</span></>} />
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {WHY.map((w, i) => (
+            <FadeInUp key={w.title} delay={(i % 3) * 100} className="h-full">
+              <div className="neon h-full" style={{'--beamDelay': (i * -1.4) + 's'}}>
+                <div className="neon-clip">
+                  <div className="neon-inner group bg-panel p-7">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-accent/25 bg-accent/10 text-accent transition-transform duration-500 group-hover:-translate-y-1">
+                      <Icon name={w.icon} size={22} />
+                    </span>
+                    <h3 className="mt-6 text-lg font-bold text-white">{w.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted">{w.text}</p>
+                  </div>
+                </div>
+              </div>
+            </FadeInUp>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Process ---------------- */
+function Process() {
+  return (
+    <section aria-label="How it works" className="border-y border-white/5 bg-panel py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <SectionHead kicker="Process" title={<>How it <EM>works.</EM></>} sub="Four simple steps — from booking to delivery." />
+        <div className="relative mt-16">
+          <div className="absolute bottom-4 left-[27px] top-4 w-px bg-white/10 md:hidden"></div>
+          <div className="absolute left-[12.5%] right-[12.5%] top-[26px] hidden h-px bg-white/10 md:block"></div>
+          <div className="grid gap-10 md:grid-cols-4 md:gap-6">
+            {PROCESS.map((p, i) => (
+              <FadeInUp key={p.n} delay={i * 120}>
+                <div className="relative flex items-start gap-5 md:block md:text-center">
+                  <div className="relative z-10 flex h-[52px] w-[52px] flex-none items-center justify-center rounded-full border border-accent/30 bg-ink text-sm font-bold text-accent md:mx-auto">{p.n}</div>
+                  <div className="md:mt-5">
+                    <h3 className="text-lg font-bold text-white">{p.title}</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-muted md:mx-auto md:max-w-[220px]">{p.text}</p>
+                  </div>
+                </div>
+              </FadeInUp>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Gallery ---------------- */
+function Gallery() {
+  const [cat, setCat] = useState('All');
+  const [lb, setLb] = useState(null);
+  const filtered = GALLERY.filter(g => cat === 'All' || g.cat.includes(cat));
+  const step = d => setLb(l => (l + d + filtered.length) % filtered.length);
+  useEffect(() => {
+    if (lb === null) return;
+    const onKey = e => {
+      if (e.key === 'Escape') setLb(null);
+      if (e.key === 'ArrowRight') step(1);
+      if (e.key === 'ArrowLeft') step(-1);
+    };
+    document.addEventListener('keydown', onKey);
+    document.body.style.overflow = 'hidden';
+    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = ''; };
+  }, [lb, filtered.length]);
+  return (
+    <section id="gallery" className="py-24 scroll-mt-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <SectionHead kicker="Portfolio" title={<>Our <EM>work.</EM></>} sub="Real vehicles, real results — straight from our workshop floor." />
+        <FadeInUp delay={100}>
+          <div className="mt-10 flex flex-wrap justify-center gap-2">
+            {CATS.map(c => (
+              <button key={c} onClick={() => { setCat(c); setLb(null); }} aria-pressed={cat === c}
+                className={'rounded-full border px-4 py-2 text-xs font-semibold tracking-wide transition-all duration-300 ' + (cat === c ? 'border-accent bg-accent text-ink' : 'border-white/15 text-soft hover:border-accent/60 hover:text-accent')}>
+                {c}
+              </button>
+            ))}
+          </div>
+        </FadeInUp>
+        <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3">
+          {filtered.map((g, i) => (
+            <FadeInUp key={g.title} delay={(i % 3) * 90} className="mb-5 break-inside-avoid">
+              <button onClick={() => setLb(i)} className="group relative block w-full overflow-hidden rounded-2xl border border-white/10 text-left" aria-label={'View larger: ' + g.title}>
+                {/* Masonry: image defines its own height via natural aspect */}
+                <SafeImg sources={g.srcs} fit="cover" alt={g.alt} className="w-full" imgClassName="block w-full transition-transform duration-700 group-hover:scale-105" label={g.title} />
+                <span className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+                <span className="absolute bottom-0 left-0 right-0 translate-y-3 p-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                  <span className="block text-sm font-bold text-white">{g.title}</span>
+                  <span className="mt-2 inline-block rounded-full border border-accent/40 bg-accent/10 px-2.5 py-0.5 text-[10px] uppercase tracking-[0.2em] text-accent">{g.cat[0]}</span>
+                </span>
+                <span className="absolute right-4 top-4 flex h-9 w-9 scale-90 items-center justify-center rounded-full border border-white/20 bg-black/60 text-white opacity-0 backdrop-blur transition-all duration-500 group-hover:scale-100 group-hover:opacity-100">
+                  <Icon name="zoom" size={16} />
+                </span>
+              </button>
+            </FadeInUp>
+          ))}
+        </div>
+      </div>
+      {lb !== null && filtered[lb] && (
+        <div className="fade-in fixed inset-0 z-[80] flex items-center justify-center p-4 pt-16 sm:p-8 sm:pt-16" role="dialog" aria-modal="true" aria-label={filtered[lb].title}>
+          <div className="absolute inset-0 bg-black/90 backdrop-blur-sm" onClick={() => setLb(null)}></div>
+          <figure className="light-in relative w-full max-w-4xl">
+            <div className="overflow-hidden rounded-2xl border border-white/10 bg-black">
+              <SafeImg sources={filtered[lb].srcs} fit="contain" alt={filtered[lb].alt} className="max-h-[72vh]" imgClassName="mx-auto block max-h-[72vh] w-auto max-w-full object-contain" label={filtered[lb].title} />
+            </div>
+            <figcaption className="mt-4 text-center text-sm text-muted">{filtered[lb].title} <span className="text-faint">·</span> ORISON CAR CARE</figcaption>
+            <button onClick={() => setLb(null)} aria-label="Close" className="absolute -top-12 right-0 flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition-colors hover:bg-white/20">
+              <Icon name="x" size={17} />
+            </button>
+            <button onClick={() => step(-1)} aria-label="Previous image" className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white backdrop-blur transition-colors hover:border-accent hover:text-accent">
+              <Icon name="chevL" size={18} />
+            </button>
+            <button onClick={() => step(1)} aria-label="Next image" className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white backdrop-blur transition-colors hover:border-accent hover:text-accent">
+              <Icon name="chevR" size={18} />
+            </button>
+          </figure>
+        </div>
+      )}
+    </section>
+  );
+}
+
+/* ---------------- Testimonials ---------------- */
+function Testimonials() {
+  const trackRef = useRef(null);
+  const scrollTrack = dir => {
+    const el = trackRef.current; if (!el) return;
+    const card = el.querySelector('[data-card]');
+    const w = card ? card.getBoundingClientRect().width + 20 : 340;
+    el.scrollBy({left: dir * w, behavior: 'smooth'});
+  };
+  return (
+    <section aria-label="Customer testimonials" className="border-y border-white/5 bg-panel py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <SectionHead kicker="Testimonials" title={<>What our customers <EM>say.</EM></>} />
+        <div ref={trackRef} className="scrollbar-hide -mx-6 mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-2">
+          {TESTIMONIALS.map(t => (
+            <div key={t.name} data-card className="flex w-[85%] flex-none snap-start flex-col rounded-2xl border border-white/10 bg-card p-7 sm:w-[55%] lg:w-[calc((100%-2.5rem)/3)]">
+              <div className="flex gap-1 text-accent">{Array.from({length: t.rating}).map((_, i) => <Icon key={i} name="star" size={13} />)}</div>
+              <Icon name="quote" size={26} className="mb-3 mt-4 text-white/10" />
+              <p className="flex-1 text-sm leading-relaxed text-soft">"{t.text}"</p>
+              <div className="mt-6 flex items-center gap-3 border-t border-white/10 pt-5">
+                <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full border border-accent/30 bg-accent/10 text-sm font-bold text-accent">
+                  {t.name.split(' ').map(w => w[0]).slice(0, 2).join('')}
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-white">{t.name}</p>
+                  <p className="text-xs text-faint">{t.car} · {t.service}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8 flex justify-center gap-3">
+          <button onClick={() => scrollTrack(-1)} aria-label="Previous testimonials" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-soft transition-all duration-300 hover:border-accent hover:text-accent"><Icon name="chevL" size={18} /></button>
+          <button onClick={() => scrollTrack(1)} aria-label="Next testimonials" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-soft transition-all duration-300 hover:border-accent hover:text-accent"><Icon name="chevR" size={18} /></button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- FAQ ---------------- */
+function FAQ() {
+  const [open, setOpen] = useState(0);
+  return (
+    <section id="faq" aria-label="Frequently asked questions" className="py-24 scroll-mt-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-6">
+        <SectionHead kicker="FAQ" title={<>We've got <EM>answers.</EM></>} />
+        <FadeInUp delay={120}>
+          <div className="mt-12 rounded-xl border border-white/10 bg-transparent">
+            {FAQS.map((f, i) => (
+              <div key={f.q} className={i < FAQS.length - 1 ? 'border-b border-white/10' : ''}>
+                <button onClick={() => setOpen(o => o === i ? -1 : i)} aria-expanded={open === i}
+                  className="flex w-full items-center justify-between gap-4 px-6 py-6 text-left">
+                  <span className="text-base font-medium text-white">{f.q}</span>
+                  <span className={'flex-none transition-all duration-300 ' + (open === i ? 'rotate-45 text-accent' : 'text-muted')}><Icon name="plus" size={18} /></span>
+                </button>
+                <div className={'acc-body ' + (open === i ? 'open' : '')}>
+                  <div className="acc-inner"><p className="px-6 pb-6 text-sm leading-relaxed text-muted">{f.a}</p></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </FadeInUp>
+      </div>
+    </section>
+  );
+}
+
+/* ---------------- Contact map ---------------- */
+function ContactMap() {
+  return (
+    <FadeInUp delay={220} className="mx-auto mt-14 w-full max-w-5xl px-6">
+      <div className="map">
+        <iframe className="map-embed" title="ORISON CAR CARE workshop location on Google Maps"
+          src={MAPS_EMBED} loading="lazy" allowFullScreen referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <div className="map-c">
+          <h3 className="map-title">ORISON CAR CARE</h3>
+          <p className="map-text">Our workshop in Karnataka — drive in for a free inspection and an upfront, no-surprises estimate.</p>
+          <div className="det"><Icon name="pin" size={15} /> 14.470380, 75.898223 — Karnataka, India</div>
+          <div className="det"><Icon name="phone" size={15} /> {PHONE_DISPLAY}</div>
+          <div className="det"><Icon name="mail" size={15} /> {EMAIL}</div>
+          <div className="map-btns">
+            <a className="map-btn" href={MAPS_DIR} target="_blank" rel="noopener" aria-label="Get directions to ORISON CAR CARE on Google Maps">
+              <Icon name="nav" size={18} /><span>Directions</span>
+            </a>
+            <a className="map-btn" href={'mailto:' + EMAIL} aria-label="Email ORISON CAR CARE">
+              <Icon name="mail" size={18} /><span>Email</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </FadeInUp>
+  );
+}
+
+/* ---------------- Contact ---------------- */
+function Contact() {
+  return (
+    <section id="contact" className="py-24 scroll-mt-24 md:py-32">
+      <div className="mx-auto max-w-5xl px-6">
+        <FadeInUp className="text-center">
+          <p className={KICK + ' justify-center'}><span className="h-px w-8 bg-accent/60"></span>Contact<span className="h-px w-8 bg-accent/60"></span></p>
+          <h2 className="text-4xl font-bold tracking-tight text-white md:text-5xl">Book your <EM>service.</EM></h2>
+          <p className="mx-auto mt-5 max-w-xl leading-relaxed text-muted">Message us on WhatsApp or call — we'll confirm your slot and take it from there.</p>
+        </FadeInUp>
+      </div>
+      <ContactMap />
+    </section>
+  );
+}
+
+/* ---------------- Footer ---------------- */
+function Footer() {
+  return (
+    <footer aria-label="Footer" className="relative z-0 overflow-hidden border-t border-white/5 px-6 pb-10 pt-32">
+      <video aria-hidden="true" src={VIDEO} autoPlay muted loop playsInline preload="metadata" className="absolute inset-0 -z-10 h-full w-full object-cover opacity-40"></video>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black via-black/60 to-black"></div>
+
+      <div className="mx-auto mb-32 max-w-3xl text-center">
+        <FadeInUp>
+          <h2 className="text-4xl font-bold tracking-tight text-white md:text-6xl">Give your car the care it <EM>deserves.</EM></h2>
+          <p className="mx-auto mt-5 max-w-xl text-muted">Book your next service with ORISON CAR CARE and experience professional automotive care.</p>
+          <div className="mt-9 flex flex-wrap items-center justify-center">
+            <a href="#contact" className={BTN_P}>Book a Service <Icon name="arrow" size={15} /></a>
+          </div>
+        </FadeInUp>
+      </div>
+
+      <div className="mx-auto mb-24 grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-3">
+        <div className="flex flex-col items-center md:items-start">
+          <LogoStacked />
+          <p className="mt-6 text-sm leading-relaxed text-muted md:text-left">Professional car care, restoration and detailing. Quality work, honest advice — every vehicle, every time.</p>
+          <div className="mt-6 flex gap-3">
+            <a href={IG} target="_blank" rel="noopener" aria-label="Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-all duration-300 hover:border-accent hover:text-accent"><Icon name="ig" size={16} /></a>
+            <a href={YT} target="_blank" rel="noopener" aria-label="YouTube" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-all duration-300 hover:border-accent hover:text-accent"><Icon name="yt" size={16} /></a>
+            <a href={WA_DEFAULT} target="_blank" rel="noopener" aria-label="WhatsApp" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-all duration-300 hover:border-accent hover:text-accent"><Icon name="wa" size={16} /></a>
+          </div>
+        </div>
+        <nav aria-label="Quick links" className="flex flex-col items-center md:items-start">
+          <h3 className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-white">Quick Links</h3>
+          <ul className="space-y-3 text-center md:text-left">
+            {NAV_LINKS.map(l => <li key={l.id}><a href={'#' + l.id} className="text-sm text-white transition-colors hover:text-accent">{l.label}</a></li>)}
+          </ul>
+        </nav>
+        <nav aria-label="Services" className="flex flex-col items-center md:items-start">
+          <h3 className="mb-5 text-sm font-bold uppercase tracking-[0.2em] text-white">Services</h3>
+          <ul className="space-y-3 text-center md:text-left">
+            {SERVICES.map(s => <li key={s.num}><a href="#services" className="text-sm text-white transition-colors hover:text-accent">{s.name}</a></li>)}
+          </ul>
+        </nav>
+      </div>
+
+      <div className="border-t border-white/5 pt-8">
+        <p className="flex flex-col items-center justify-center gap-2 text-xs text-muted md:flex-row md:gap-4">
+          <span>© 2026 ORISON CAR CARE. All rights reserved</span>
+          <span className="hidden h-1 w-1 rounded-full bg-accent md:inline-block"></span>
+          <span>by <span className="text-white">Needy Solutions</span></span>
+          <span className="hidden h-1 w-1 rounded-full bg-accent md:inline-block"></span>
+          <span>Made in <span className="text-white">Karnataka</span></span>
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+/* ---------------- Floating WhatsApp + Toast ---------------- */
+function WhatsAppButton() {
+  return (
+    <a href={WA_DEFAULT} target="_blank" rel="noopener" aria-label="Chat on WhatsApp"
+      className="group fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center">
+      <span className="wa-ping absolute inset-0 rounded-full bg-accent"></span>
+      <span className="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent text-ink shadow-[0_8px_30px_rgba(0,214,255,0.4)] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#3DE4FF]">
+        <Icon name="wa" size={26} />
+      </span>
+      <span className="pointer-events-none absolute right-full top-1/2 mr-3 -translate-y-1/2 whitespace-nowrap rounded-lg border border-white/10 bg-panel px-3 py-2 text-xs font-medium text-white opacity-0 shadow-xl transition-all duration-300 group-hover:-translate-x-1 group-hover:opacity-100">
+        Chat on WhatsApp
+      </span>
+    </a>
+  );
+}
+function Toast({msg}) {
+  if (!msg) return null;
+  return (
+    <div className="fade-in fixed bottom-24 left-1/2 z-[90] flex -translate-x-1/2 items-center gap-2.5 whitespace-nowrap rounded-full border border-white/10 bg-panel px-5 py-3 text-sm text-white shadow-2xl" role="status">
+      <span className="flex h-5 w-5 items-center justify-center rounded-full bg-accent/20 text-accent"><Icon name="check" size={11} sw={2.6} /></span>
+      {msg}
+    </div>
+  );
+}
+
+/* ---------------- App ---------------- */
+function App() {
+  const [modalSvc, setModalSvc] = useState(null);
+  const [toast, setToast] = useState(null);
+  const toastTimer = useRef(null);
+  const showToast = m => {
+    setToast(m);
+    clearTimeout(toastTimer.current);
+    toastTimer.current = setTimeout(() => setToast(null), 3800);
+  };
+  const bookService = svc => {
+    setModalSvc(null);
+    const msg = "Hi ORISON CAR CARE! I'd like to book: " + svc.name + ". Please share availability and an estimate.";
+    window.open(WA_BASE + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+    showToast('"' + svc.name + '" — opening WhatsApp to confirm your booking…');
+  };
+  return (
+    <React.Fragment>
+      <a href="#home" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-sm focus:text-ink">Skip to content</a>
+      <Navbar />
+      <main>
+        <Hero />
+        <Marquee />
+        <Stats />
+        <About />
+        <Services onLearn={setModalSvc} />
+        <Featured />
+        <BeforeAfterSection />
+        <Why />
+        <Process />
+        <Gallery />
+        <Testimonials />
+        <FAQ />
+        <Contact />
+      </main>
+      <Footer />
+      <WhatsAppButton />
+      <ServiceModal svc={modalSvc} onClose={() => setModalSvc(null)} onBook={bookService} />
+      <Toast msg={toast} />
+    </React.Fragment>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
