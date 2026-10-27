@@ -423,6 +423,14 @@ const VIDEO = 'https://cdn.sceneai.art/Hero%20Section%20Video/50b4f304-cdca-4e12
 
 /* Candidate URL builder: tries name.jpg, .jpeg, .png, .webp in order */
 const IMAGE_LOOKUP = {
+  "bmw-engine-after": "images/bmw-engine-after.jpg",
+  "bmw-engine-before": "images/bmw-engine-before.jpg",
+  "maruti800-shell-restoration": "images/maruti800-shell-restoration.jpg",
+  "maruti800-fully-restored": "images/maruti800-fully-restored.jpg",
+  "service-painting-finish": "images/service-painting-finish.jpg",
+  "service-denting-work": "images/service-denting-work.jpg",
+  "service-headlight-before": "images/service-headlight-before.jpg",
+  "service-headlight-after": "images/service-headlight-after.jpg",
   "gallery-hyundai-1": "images/gallery-hyundai-1.jpg",
   "gallery-hyundai-2": "images/gallery-hyundai-2.jpg",
   "hyundai-i20-work-1": "images/hyundai-i20-work-1.jpg",
@@ -484,12 +492,12 @@ const NAV_LINKS = [
 const SERVICES = [
   {num:'01', icon:'spray',   name:'Car Painting',      desc:'Professional automotive painting and premium finish restoration.', imageSrc:'images/service-painting-finish.jpg', tag:'Painting'},
   {num:'02', icon:'wrench',  name:'Car Denting',       desc:'Professional dent repair, panel realignment and structural restoration.', imageSrc:'images/service-denting-work.jpg', tag:'Denting'},
-  {num:'03', icon:'shield',  name:'Underbody Coating', desc:'Protect the vehicle underbody from moisture, dirt and corrosion.', imageSrc:'images/work-paint-before.jpg', tag:'Protection'},
+  {num:'03', icon:'shield',  name:'Underbody Coating', desc:'Protect the vehicle underbody and chassis from moisture, dirt, rust and corrosion.', imageSrc:'images/maruti800-shell-restoration.jpg', tag:'Protection'},
   {num:'04', icon:'bulb',    name:'Headlight Buffing', desc:'Restore clarity, brightness and appearance of oxidized headlights.', imageSrc:'images/service-headlight-after.jpg', tag:'Headlights'},
   {num:'05', icon:'drop',    name:'Car Washing',       desc:'Professional foam wash, exterior decontamination and high-pressure rinse.', imageSrc:'images/hyundai-i20-work-2.jpg', tag:'Washing'},
   {num:'06', icon:'seat',    name:'Interior Cleaning', desc:'Deep steam cleaning for seats, dashboard, carpets and interior surfaces.', imageSrc:'images/WhatsApp Image 2026-10-10 at 4.48.36 PM (2).jpeg', tag:'Interior'},
-  {num:'07', icon:'sparkle', name:'Car Detailing',     desc:'Complete interior and exterior detailing for a showroom mirror finish.', imageSrc:'images/maruti800-restored-front.jpg', tag:'Detailing'},
-  {num:'08', icon:'circle',  name:'Wheel Painting',    desc:'Professional wheel and rim painting for a fresh, custom look.', imageSrc:'images/maruti800-restored-side.jpg', tag:'Custom Wheels'}
+  {num:'07', icon:'sparkle', name:'Car Detailing',     desc:'Complete interior, engine bay and exterior detailing for a showroom mirror finish.', imageSrc:'images/bmw-engine-after.jpg', tag:'Detailing'},
+  {num:'08', icon:'circle',  name:'Wheel Painting',    desc:'Professional wheel and rim painting for a fresh, custom look.', imageSrc:'images/maruti800-fully-restored.jpg', tag:'Custom Wheels'}
 ];
 const SERVICE_POINTS = ['Vehicle inspection before every job','Quality products and modern equipment','Clear estimate before work begins'];
 
@@ -1680,30 +1688,30 @@ const TRANSFORMS = [
   },
   {
     id: 'interior',
-    name: 'Interior Detailing',
-    sub: 'Engine bay & interior deep detailing',
-    beforeSrcs: IMGS('work-engine-1'),
-    afterSrcs: IMGS('work-engine-2'),
-    beforeAlt: 'Engine bay before deep cleaning and interior detailing',
-    afterAlt: 'Engine bay and surfaces restored after deep detailing'
+    name: 'Engine Bay Detailing',
+    sub: 'BMW Engine Bay — Deep cleaning & restoration',
+    beforeSrcs: ['images/bmw-engine-before.jpg'],
+    afterSrcs: ['images/bmw-engine-after.jpg'],
+    beforeAlt: 'BMW engine bay with dust and road grime before detailing',
+    afterAlt: 'BMW engine bay restored to factory-clean finish after detailing'
   },
   {
     id: 'correction',
     name: 'Paint Correction',
-    sub: 'Precision scratch removal & mirror finish gloss',
-    beforeSrcs: IMGS('hyundai-i20-work-3'),
-    afterSrcs: IMGS('hyundai-i20-work-5'),
-    beforeAlt: 'Hyundai i20 body panels before paint correction and repair',
-    afterAlt: 'Hyundai i20 after precision paint correction and high-gloss polish'
+    sub: 'Full body paint & structural restoration',
+    beforeSrcs: ['images/maruti800-shell-restoration.jpg'],
+    afterSrcs: ['images/maruti800-fully-restored.jpg'],
+    beforeAlt: 'Maruti 800 body shell during complete stripping and anti-rust restoration',
+    afterAlt: 'Maruti 800 fully restored with showroom gloss white paint finish'
   },
   {
     id: 'headlight',
     name: 'Headlight Restoration',
     sub: 'Clarity, UV oxidation removal & beam brightness restored',
-    beforeSrcs: IMGS('work-headlights'),
-    afterSrcs: IMGS('work-headlights'),
-    beforeAlt: 'Headlights before restoration',
-    afterAlt: 'Headlights after restoration'
+    beforeSrcs: ['images/service-headlight-before.jpg'],
+    afterSrcs: ['images/service-headlight-after.jpg'],
+    beforeAlt: 'Oxidized, hazy headlight before multi-stage buffing',
+    afterAlt: 'Crystal-clear headlight after professional restoration'
   }
 ];
 
