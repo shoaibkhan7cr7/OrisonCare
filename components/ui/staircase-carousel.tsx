@@ -118,7 +118,7 @@ const CSS =
   ".stc-title{left:0;right:0;justify-content:center;transform-origin:50% 50%;font-size:15px}}" +
   "@keyframes stc-in{from{opacity:0;transform:scale(.5);filter:blur(2px)}to{opacity:1;transform:scale(1);filter:blur(0)}}" +
   "@keyframes stc-out{from{opacity:1;transform:scale(1);filter:blur(0)}to{opacity:0;transform:scale(.5);filter:blur(2px)}}" +
-  ".stc-controls{display:flex;align-items:center;gap:16px;padding:2px 10px;border-radius:999px;position:relative;margin-top:28px;z-index:1;" +
+  ".stc-controls{display:flex;align-items:center;gap:16px;padding:2px 10px;border-radius:999px;position:relative;margin-top:48px;z-index:1;" +
   "align-items:center;gap:16px;padding:0 8px;border-radius:999px;" +
   "background:color-mix(in oklab,currentColor 7%,transparent);" +
   "border:1px solid color-mix(in oklab,currentColor 12%,transparent);" +
