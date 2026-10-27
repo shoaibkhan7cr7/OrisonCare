@@ -482,14 +482,14 @@ const NAV_LINKS = [
 ];
 
 const SERVICES = [
-  {num:'01', icon:'spray',   name:'Car Painting',      desc:'Professional automotive painting and premium finish restoration.', imageSrc:'https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=80', tag:'Painting'},
-  {num:'02', icon:'wrench',  name:'Car Denting',       desc:'Professional dent repair, panel realignment and structural restoration.', imageSrc:'https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=1200&q=80', tag:'Denting'},
-  {num:'03', icon:'shield',  name:'Underbody Coating', desc:'Protect the vehicle underbody from moisture, dirt and corrosion.', imageSrc:'https://images.unsplash.com/photo-1486006920555-c77dce18193b?auto=format&fit=crop&w=1200&q=80', tag:'Protection'},
-  {num:'04', icon:'bulb',    name:'Headlight Buffing', desc:'Restore clarity, brightness and appearance of oxidized headlights.', imageSrc:'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=80', tag:'Headlights'},
-  {num:'05', icon:'drop',    name:'Car Washing',       desc:'Professional foam wash, exterior decontamination and high-pressure rinse.', imageSrc:'https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1200&q=80', tag:'Washing'},
-  {num:'06', icon:'seat',    name:'Interior Cleaning', desc:'Deep steam cleaning for seats, dashboard, carpets and interior surfaces.', imageSrc:'https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&w=1200&q=80', tag:'Interior'},
-  {num:'07', icon:'sparkle', name:'Car Detailing',     desc:'Complete interior and exterior detailing for a showroom mirror finish.', imageSrc:'https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1200&q=80', tag:'Detailing'},
-  {num:'08', icon:'circle',  name:'Wheel Painting',    desc:'Professional wheel and rim painting for a fresh, custom look.', imageSrc:'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=80', tag:'Custom Wheels'}
+  {num:'01', icon:'spray',   name:'Car Painting',      desc:'Professional automotive painting and premium finish restoration.', imageSrc:'images/service-painting-finish.jpg', tag:'Painting'},
+  {num:'02', icon:'wrench',  name:'Car Denting',       desc:'Professional dent repair, panel realignment and structural restoration.', imageSrc:'images/service-denting-work.jpg', tag:'Denting'},
+  {num:'03', icon:'shield',  name:'Underbody Coating', desc:'Protect the vehicle underbody from moisture, dirt and corrosion.', imageSrc:'images/work-paint-before.jpg', tag:'Protection'},
+  {num:'04', icon:'bulb',    name:'Headlight Buffing', desc:'Restore clarity, brightness and appearance of oxidized headlights.', imageSrc:'images/service-headlight-after.jpg', tag:'Headlights'},
+  {num:'05', icon:'drop',    name:'Car Washing',       desc:'Professional foam wash, exterior decontamination and high-pressure rinse.', imageSrc:'images/hyundai-i20-work-2.jpg', tag:'Washing'},
+  {num:'06', icon:'seat',    name:'Interior Cleaning', desc:'Deep steam cleaning for seats, dashboard, carpets and interior surfaces.', imageSrc:'images/WhatsApp Image 2026-10-10 at 4.48.36 PM (2).jpeg', tag:'Interior'},
+  {num:'07', icon:'sparkle', name:'Car Detailing',     desc:'Complete interior and exterior detailing for a showroom mirror finish.', imageSrc:'images/maruti800-restored-front.jpg', tag:'Detailing'},
+  {num:'08', icon:'circle',  name:'Wheel Painting',    desc:'Professional wheel and rim painting for a fresh, custom look.', imageSrc:'images/maruti800-restored-side.jpg', tag:'Custom Wheels'}
 ];
 const SERVICE_POINTS = ['Vehicle inspection before every job','Quality products and modern equipment','Clear estimate before work begins'];
 
@@ -1152,9 +1152,10 @@ function CardStack({
                 <div className="relative h-full w-full bg-[#101418]">
                   <img
                     src={item.imageSrc}
-                    alt={item.name || item.title}
+                    alt=""
                     className="h-full w-full object-cover select-none pointer-events-none transition-transform duration-700 hover:scale-105"
-                    loading="lazy"
+                    loading="eager"
+                    onError={(e) => { e.currentTarget.style.opacity = '0'; }}
                   />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent" />
